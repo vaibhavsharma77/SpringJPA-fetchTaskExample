@@ -31,6 +31,6 @@ Checking Records in In Moemory Database
 
 ## Tech Stack
 
-**Skill:** Java,Spring boot and H2 as In Memory Database
+**Skill:** Java,Rest Web Service,Spring boot and H2 as In Memory Database
 
 
