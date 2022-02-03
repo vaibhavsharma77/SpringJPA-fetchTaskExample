@@ -26,11 +26,11 @@ Checking Records in In Moemory Database
 
 ```bash
  1.Hit the http://localhost:9000/h2-console with credentails as (username:sa ,password : password)
- 2.The Number of times your hit the get endpoint mentioned above it produce different result each time(DONE,ERROR,OPEN)
+ 2.The Number of times your hit the get endpoint mentioned above it produce different result each time(DONE,ERROR,OPEN) in our database status.
 ```
 
 ## Tech Stack
 
-**Skill:** Java,Spring boot and H2 as In Memory Database
+**Skill:** Java,Rest Web Service,Spring boot and H2 as In Memory Database
 
 
