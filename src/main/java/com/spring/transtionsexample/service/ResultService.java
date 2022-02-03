@@ -1,5 +1,6 @@
 package com.spring.transtionsexample.service;
 
+import com.spring.transtionsexample.util.ProcessingStatus;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -7,15 +8,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class ResultService {
 
-    public String fetchResult(){
+    public ProcessingStatus fetchResult(){
         int number=randomNumber();
         log.info("number is {}",number);
-        if(number%3==0){
-            return "DONE";
-        }else if(number%2==0){
-            return "Open";
+        if(number%7==0){
+            return ProcessingStatus.ERROR;
+        }else if(number%11==0){
+            return ProcessingStatus.DONE;
         }else{
-            return "ERROR";
+            return ProcessingStatus.ONGOING;
         }
     }
 

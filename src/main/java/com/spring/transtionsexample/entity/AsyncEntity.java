@@ -1,5 +1,7 @@
 package com.spring.transtionsexample.entity;
 
+import com.spring.transtionsexample.util.AsyncTaskStatus;
+import com.spring.transtionsexample.util.ProcessingStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,7 +19,9 @@ public class AsyncEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String status;
+    private String caseId;
+    @Enumerated(EnumType.STRING)
+    private AsyncTaskStatus status;
     private int attempt;
     private LocalDateTime creationDate;
     private LocalDateTime modificationDate;
